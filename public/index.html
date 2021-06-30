@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Todo App</h1>
+    <br>
+    <h3>No of todos</h3>
+    <form id="myform" name="myForm" action="/addtodo">
+        Todo: <input type="text" name="todoname" required>
+        <input type="submit" value="ADD">
+        <br><br>
+    </form>
+    <form id="form2" name="deleteform" action="/deletetodo">
+        ${printtodos}
+        <br>
+        <input type="submit" value="Delete">
+    </form>
+</body>
+</html>
